@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-menu {
+    display: flex;
+}
+.top-menu-item {
+    list-style-type: none;
+}
+.top-menu-item a {
+    padding: 0 10px;
+    text-decoration: none;
+}
