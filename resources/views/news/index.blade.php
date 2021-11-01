@@ -7,5 +7,8 @@
 @endsection
 
 @section('content')
-    Здесь будут все новости
+    <h2>Здесь все новости</h2>
+    @foreach ($allNews as $news)
+        <h3><a href="/news/{{ $news->id }}">{{ $news->title }}</a></h3>        
+    @endforeach
 @endsection

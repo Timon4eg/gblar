@@ -7,5 +7,6 @@
 @endsection
 
 @section('content')
-    Здесь будут одна новость {{ $id }}
+    <h2>{{ $news->title }}</h2>
+    <p>{{ $news->text }}</p>
 @endsection
