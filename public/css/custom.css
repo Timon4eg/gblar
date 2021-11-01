@@ -1,4 +1,6 @@
 body {
+    width: 1600px;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 .top-menu {
@@ -10,4 +12,9 @@ body {
 .top-menu-item a {
     padding: 0 10px;
     text-decoration: none;
+}
+.top-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
