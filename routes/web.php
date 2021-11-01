@@ -14,6 +14,12 @@ Route::get('/', [NewsController::class, 'index'])->name('news');
 Route::get('/{id}', [NewsController::class, 'show'])->where('id', '[0-9]+')->name('show');
 });
 
+Route::prefix('categories')
+->group(function() {
+    Route::get('/', [NewsController::class, 'categories'])->name('categories');
+    Route::get('/{category}', [NewsController::class, 'category'])->name('category');
+});
+
 Route::prefix('admin')
 ->group(function() {
     Route::get('/', [IndexController::class, 'index'])->name('admin-main');
