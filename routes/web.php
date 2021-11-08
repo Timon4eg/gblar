@@ -26,3 +26,6 @@ Route::prefix('admin')
     Route::get('/test1', [IndexController::class, 'test1'])->name('test1');
     Route::get('/test2', [IndexController::class, 'test2'])->name('test2');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

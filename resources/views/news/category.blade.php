@@ -7,8 +7,19 @@
 @endsection
 
 @section('content')
-    <h2>Здесь все новости категории {{ $category->name }}</h2>
-    @foreach ($newsFromCategory as $news)
-        <h3><a href="/news/{{ $news->id }}">{{ $news->title }}</a></h3>        
-    @endforeach
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">Здесь все новости категории {{ $category->name }}</div>
+
+                <div class="card-body">
+                    @foreach ($newsFromCategory as $news)
+                        <h3><a href="/news/{{ $news->id }}">{{ $news->title }}</a></h3>        
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

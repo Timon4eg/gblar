@@ -7,5 +7,17 @@
 @endsection
 
 @section('content')
-    Главная админская страница
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">Главная админская страница</div>
+
+                <div class="card-body">
+                    Здесь будет текст главной админской страницы
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
