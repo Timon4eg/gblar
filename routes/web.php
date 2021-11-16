@@ -25,7 +25,7 @@ Route::prefix('admin')
     Route::get('/', [IndexController::class, 'index'])->name('admin-main');
     Route::get('/test1', [IndexController::class, 'test1'])->name('test1');
     Route::get('/test2', [IndexController::class, 'test2'])->name('test2');
-    Route::get('/addnews', [IndexController::class, 'create'])->name('addNews');
+    Route::get('/addnews', [IndexController::class, 'create'])->name('create');
 });
 Auth::routes();
 
