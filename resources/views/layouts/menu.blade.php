@@ -16,7 +16,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route ('about') }}">О нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route ('categories') }}">Категории</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route ('news') }}">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route ('admin-main') }}">Админка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route ('admin.admin-main') }}">Админка</a></li>
                 </ul>
     
                 <!-- Right Side Of Navbar -->

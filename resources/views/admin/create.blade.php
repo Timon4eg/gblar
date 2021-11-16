@@ -14,7 +14,16 @@
                 <div class="card-header">Добавление новости</div>
 
                 <div class="card-body">
-                    Здесь видимо будет форма
+                    <form method="POST" action="{{ route('admin.create') }}">
+                        @csrf
+                        <div class="form-group">
+                            <label for="newsTitle">Заголовок новости</label>
+                            <input type="text" name="title" id="newsTitle" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-outline-primary" value="Добавить новость">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

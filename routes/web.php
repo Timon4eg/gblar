@@ -20,12 +20,14 @@ Route::prefix('categories')
     Route::get('/{category}', [NewsController::class, 'category'])->name('category');
 });
 
-Route::prefix('admin')
+Route::name('admin.')
+->prefix('admin')
 ->group(function() {
     Route::get('/', [IndexController::class, 'index'])->name('admin-main');
     Route::get('/test1', [IndexController::class, 'test1'])->name('test1');
     Route::get('/test2', [IndexController::class, 'test2'])->name('test2');
     Route::get('/addnews', [IndexController::class, 'create'])->name('create');
+    Route::match(['get', 'post'], '/addnews', [IndexController::class, 'create'])->name('create');
 });
 Auth::routes();
 

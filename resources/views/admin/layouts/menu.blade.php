@@ -15,9 +15,9 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route ('about') }}">О нас</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route ('categories') }}">Категории</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route ('news') }}">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route ('create') }}">Добавить новость</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route ('test1') }}">РазделАдминки1</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route ('test2') }}">РазделАдминки2</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.create') }}">Добавить новость</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.test1') }}">РазделАдминки1</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.test2') }}">РазделАдминки2</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
