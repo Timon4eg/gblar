@@ -10,10 +10,16 @@ class IndexController extends Controller
     public function index() {
         return view ('admin.index');
     }
+
     public function test1() {
         return view ('admin.test1');
     }
+
     public function test2() {
         return view ('admin.test2');
+    }
+
+    public  function create() {
+        return view ('admin.create');
     }
 }
