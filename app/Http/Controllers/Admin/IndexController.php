@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\News;
 
 class IndexController extends Controller
 {
@@ -12,12 +13,14 @@ class IndexController extends Controller
         return view ('admin.index');
     }
 
-    public function test1() {
-        return view ('admin.test1');
+    public function getNewsJson(News $news) {
+        return response()->json($news->get())
+        ->header('Content-Disposition', 'attachment; filename = "newsjson.json"')
+        ->setEncodingOptions(JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 
-    public function test2() {
-        return view ('admin.test2');
+    public function getPict() {
+        return response()->download('img/pict.jpg');
     }
 
     public  function create(Request $request, Category $categories) {

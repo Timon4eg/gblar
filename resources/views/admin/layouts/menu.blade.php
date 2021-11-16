@@ -16,8 +16,8 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route ('categories') }}">Категории</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route ('news') }}">Новости</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route ('admin.create') }}">Добавить новость</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.test1') }}">РазделАдминки1</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.test2') }}">РазделАдминки2</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.getNewsJson') }}">JSON новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route ('admin.getPict') }}">Скачать картинку</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
